@@ -18,7 +18,6 @@ use MoonShine\Laravel\MoonShineRequest;
 use MoonShine\Laravel\QueryTags\QueryTag;
 use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\Support\AlpineJs;
-use MoonShine\Support\Attributes\Icon;
 use MoonShine\Support\Enums\ClickAction;
 use MoonShine\Support\Enums\JsEvent;
 use MoonShine\Support\Enums\ToastType;
@@ -33,7 +32,6 @@ use Throwable;
 /**
  * @extends ModelResource<FailedJob>
  */
-#[Icon('star')]
 class FailedJobResource extends ModelResource
 {
     protected string $model = FailedJob::class;

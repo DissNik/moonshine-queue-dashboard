@@ -6,8 +6,10 @@ use DissNik\MoonShineQueueDashboard\Components\FailedJobs;
 use DissNik\MoonShineQueueDashboard\Components\QueueMetrics;
 use MoonShine\Laravel\Components\Fragment;
 use MoonShine\Laravel\Pages\Page;
+use MoonShine\Support\Attributes\Icon;
 use MoonShine\UI\Components\Layout\Divider;
 
+#[Icon('chart-bar')]
 class QueueDashboardPage extends Page
 {
     public function getTitle(): string
