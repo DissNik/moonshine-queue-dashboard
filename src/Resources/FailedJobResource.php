@@ -205,10 +205,10 @@ class FailedJobResource extends ModelResource
     protected function filters(): iterable
     {
         return [
-            DateRange::make(__('moonshine-queue-dashboard::dashboard.dates'), 'failed_at')
+            DateRange::make(__('moonshine-queue-dashboard::dashboard.interval'), 'failed_at')
                 ->withTime(),
             Textarea::make(
-                __('moonshine-queue-dashboard::dashboard.message'),
+                __('moonshine-queue-dashboard::dashboard.exception_message'),
                 'exception',
             ),
         ];
