@@ -114,3 +114,16 @@ QueueMetrics::make();
     <source media="(prefers-color-scheme: light)" srcset="./art/queue_metrics.png">
     <img alt="Queue Metrics" src="./art/queue_metrics.png">
 </picture>
+
+> [!INFO]
+> To refresh metrics use Fragment with name 'queue_metrics'
+
+```php
+use DissNik\MoonShineQueueDashboard\Components\QueueMetrics;
+use MoonShine\Laravel\Components\Fragment;
+
+Fragment::make([
+    QueueMetrics::make(),
+])
+    ->name('queue_metrics')
+```
