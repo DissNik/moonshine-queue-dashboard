@@ -18,13 +18,13 @@
         </x-moonshine::layout.div>
     </x-moonshine::layout.div>
 
-    <x-moonshine::layout.divider :isCentered="true" :label="__('jobs')" class="text-3xs"></x-moonshine::layout.divider>
+    <x-moonshine::layout.divider :isCentered="true" :label="__('moonshine-queue-dashboard::dashboard.jobs')" class="text-3xs"></x-moonshine::layout.divider>
 
     <x-moonshine::layout.grid :gap="0" class="divide-x divide-slate-200 dark:divide-dark-100">
         <x-moonshine::layout.column adaptiveColSpan="3" colSpan="3">
             <x-moonshine::layout.div class="px-0.5">
                 <x-moonshine::layout.div class="text-center text-md">{{ $metric->pending }}</x-moonshine::layout.div>
-                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400">
+                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400 truncate overflow-hidden">
                     <small>{{ __('moonshine-queue-dashboard::dashboard.pending') }}</small>
                 </x-moonshine::layout.div>
             </x-moonshine::layout.div>
@@ -33,7 +33,7 @@
         <x-moonshine::layout.column adaptiveColSpan="3" colSpan="3">
             <x-moonshine::layout.div class="px-0.5">
                 <x-moonshine::layout.div class="text-center text-md">{{ $metric->delayed }}</x-moonshine::layout.div>
-                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400">
+                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400 truncate overflow-hidden">
                     <small>{{ __('moonshine-queue-dashboard::dashboard.delayed') }}</small>
                 </x-moonshine::layout.div>
             </x-moonshine::layout.div>
@@ -42,7 +42,7 @@
         <x-moonshine::layout.column adaptiveColSpan="3" colSpan="3">
             <x-moonshine::layout.div class="px-0.5">
                 <x-moonshine::layout.div class="text-center text-md">{{ $metric->reserved }}</x-moonshine::layout.div>
-                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400">
+                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400 truncate overflow-hidden">
                     <small>{{ __('moonshine-queue-dashboard::dashboard.reserved') }}</small>
                 </x-moonshine::layout.div>
             </x-moonshine::layout.div>
@@ -51,7 +51,7 @@
         <x-moonshine::layout.column adaptiveColSpan="3" colSpan="3">
             <x-moonshine::layout.div class="px-0.5">
                 <x-moonshine::layout.div class="text-center text-md">{{ $metric->size }}</x-moonshine::layout.div>
-                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400">
+                <x-moonshine::layout.div class="text-center text-3xs text-dark-400 dark:text-slate-400 truncate overflow-hidden">
                     <small>{{ __('moonshine-queue-dashboard::dashboard.total') }}</small>
                 </x-moonshine::layout.div>
             </x-moonshine::layout.div>

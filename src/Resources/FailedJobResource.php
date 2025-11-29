@@ -228,7 +228,7 @@ class FailedJobResource extends ModelResource
 
         return collect($queues)
             ->map(fn($queue) => QueryTag::make(
-                Str::title(str_replace(['-', '_'], ' ', $queue)),
+                Str::upper(str_replace(['-', '_'], ' ', $queue)),
                 fn(Builder $query) => $query->where('queue', $queue)
             ))
             ->prepend(
