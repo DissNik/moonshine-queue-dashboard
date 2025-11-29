@@ -115,8 +115,6 @@ QueueMetrics::make();
     <img alt="Queue Metrics" src="./art/queue_metrics.png">
 </picture>
 
-<br>
-
 > [!TIP]
 > To refresh metrics use Fragment with name 'queue_metrics'
 
