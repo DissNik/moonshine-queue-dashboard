@@ -30,6 +30,14 @@ from the Moonshine admin panel.
 - Laravel 10.x or higher
 - Moonshine 3.x or higher
 
+## Installation
+
+Install the package via Composer:
+
+```bash
+composer require dissnik/moonshine-queue-dashboard
+```
+
 ## Usage
 
 The dashboard will automatically appear in your MoonShine admin panel if `auto_menu` is enabled in config.
