@@ -3,7 +3,7 @@
     'refreshInterval' => 10000,
 ])
 
-<button {{ $attributes->class(['btn'])->merge(['type' => 'button']) }}
+<button {{ $attributes->class(['btn btn-square'])->merge(['type' => 'button']) }}
         x-data="autoRefresh({
             autoRefresh: @js($autoRefresh),
             refreshInterval: @js($refreshInterval)

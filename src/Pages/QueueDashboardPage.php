@@ -4,7 +4,7 @@ namespace DissNik\MoonShineQueueDashboard\Pages;
 
 use DissNik\MoonShineQueueDashboard\Components\FailedJobs;
 use DissNik\MoonShineQueueDashboard\Components\QueueMetrics;
-use MoonShine\Laravel\Components\Fragment;
+use MoonShine\Crud\Components\Fragment;
 use MoonShine\Laravel\Pages\Page;
 use MoonShine\Support\Attributes\Icon;
 use MoonShine\UI\Components\Layout\Divider;

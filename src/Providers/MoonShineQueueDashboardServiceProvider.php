@@ -56,7 +56,7 @@ class MoonShineQueueDashboardServiceProvider extends ServiceProvider
 
         if (config('moonshine-queue-dashboard.auto_menu', true)) {
             $menu->add([
-                MenuItem::make(__('moonshine-queue-dashboard::dashboard.queue_dashboard'), QueueDashboardPage::class)
+                MenuItem::make(QueueDashboardPage::class),
             ]);
         }
 
